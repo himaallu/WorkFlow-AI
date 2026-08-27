@@ -1,0 +1,632 @@
+[
+  {
+    "id": "simple-01",
+    "difficulty": "Simple",
+    "user_query": "What approval is required for a AED 2000 purchase?",
+    "expected_intent": "check_approval",
+    "expected_requirements": {
+      "budget": 2000
+    },
+    "expected_policy_result": "Manager",
+    "expected_budget_result": 2000,
+    "expected_approval": [
+      "Manager"
+    ],
+    "expected_workflow": [
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "simple-02",
+    "difficulty": "Simple",
+    "user_query": "What approval is required for a AED 4000 purchase?",
+    "expected_intent": "check_approval",
+    "expected_requirements": {
+      "budget": 4000
+    },
+    "expected_policy_result": "Manager",
+    "expected_budget_result": 4000,
+    "expected_approval": [
+      "Manager"
+    ],
+    "expected_workflow": [
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "simple-03",
+    "difficulty": "Simple",
+    "user_query": "What approval is required for a AED 6000 purchase?",
+    "expected_intent": "check_approval",
+    "expected_requirements": {
+      "budget": 6000
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 6000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "simple-04",
+    "difficulty": "Simple",
+    "user_query": "What approval is required for a AED 8000 purchase?",
+    "expected_intent": "check_approval",
+    "expected_requirements": {
+      "budget": 8000
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 8000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "simple-05",
+    "difficulty": "Simple",
+    "user_query": "What approval is required for a AED 10000 purchase?",
+    "expected_intent": "check_approval",
+    "expected_requirements": {
+      "budget": 10000
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 10000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "simple-06",
+    "difficulty": "Simple",
+    "user_query": "What approval is required for a AED 12000 purchase?",
+    "expected_intent": "check_approval",
+    "expected_requirements": {
+      "budget": 12000
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 12000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "simple-07",
+    "difficulty": "Simple",
+    "user_query": "What approval is required for a AED 14000 purchase?",
+    "expected_intent": "check_approval",
+    "expected_requirements": {
+      "budget": 14000
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 14000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "simple-08",
+    "difficulty": "Simple",
+    "user_query": "What approval is required for a AED 16000 purchase?",
+    "expected_intent": "check_approval",
+    "expected_requirements": {
+      "budget": 16000
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 16000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "simple-09",
+    "difficulty": "Simple",
+    "user_query": "What approval is required for a AED 18000 purchase?",
+    "expected_intent": "check_approval",
+    "expected_requirements": {
+      "budget": 18000
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 18000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "simple-10",
+    "difficulty": "Simple",
+    "user_query": "What approval is required for a AED 20000 purchase?",
+    "expected_intent": "check_approval",
+    "expected_requirements": {
+      "budget": 20000
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 20000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "medium-01",
+    "difficulty": "Medium",
+    "user_query": "Find three laptops under AED 16000 and identify the required approval.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "budget": 16000,
+      "quantity": 3
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 16000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Policy Validation",
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "medium-02",
+    "difficulty": "Medium",
+    "user_query": "Find three laptops under AED 17000 and identify the required approval.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "budget": 17000,
+      "quantity": 3
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 17000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Policy Validation",
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "medium-03",
+    "difficulty": "Medium",
+    "user_query": "Find three laptops under AED 18000 and identify the required approval.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "budget": 18000,
+      "quantity": 3
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 18000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Policy Validation",
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "medium-04",
+    "difficulty": "Medium",
+    "user_query": "Find three laptops under AED 19000 and identify the required approval.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "budget": 19000,
+      "quantity": 3
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 19000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Policy Validation",
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "medium-05",
+    "difficulty": "Medium",
+    "user_query": "Find three laptops under AED 20000 and identify the required approval.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "budget": 20000,
+      "quantity": 3
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 20000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Policy Validation",
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "medium-06",
+    "difficulty": "Medium",
+    "user_query": "Find three laptops under AED 21000 and identify the required approval.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "budget": 21000,
+      "quantity": 3
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 21000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Policy Validation",
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "medium-07",
+    "difficulty": "Medium",
+    "user_query": "Find three laptops under AED 22000 and identify the required approval.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "budget": 22000,
+      "quantity": 3
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 22000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Policy Validation",
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "medium-08",
+    "difficulty": "Medium",
+    "user_query": "Find three laptops under AED 23000 and identify the required approval.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "budget": 23000,
+      "quantity": 3
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 23000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Policy Validation",
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "medium-09",
+    "difficulty": "Medium",
+    "user_query": "Find three laptops under AED 24000 and identify the required approval.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "budget": 24000,
+      "quantity": 3
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 24000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Policy Validation",
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "medium-10",
+    "difficulty": "Medium",
+    "user_query": "Find three laptops under AED 25000 and identify the required approval.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "budget": 25000,
+      "quantity": 3
+    },
+    "expected_policy_result": "Department Head",
+    "expected_budget_result": 25000,
+    "expected_approval": [
+      "Department Head"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Policy Validation",
+      "Approval Determination"
+    ]
+  },
+  {
+    "id": "complex-01",
+    "difficulty": "Complex",
+    "user_query": "I need 6 laptops for my Dubai engineering team with a total budget of AED 27000. Find suitable vendors, compare total costs, check procurement policy compliance, and determine the approval workflow.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "quantity": 6,
+      "location": "Dubai",
+      "budget": 27000
+    },
+    "expected_policy_result": "Department Head + Finance",
+    "expected_budget_result": 27000,
+    "expected_approval": [
+      "Department Head",
+      "Finance"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Budget Validation",
+      "Policy Validation",
+      "Approval Determination",
+      "Purchase Request Generation"
+    ]
+  },
+  {
+    "id": "complex-02",
+    "difficulty": "Complex",
+    "user_query": "I need 7 laptops for my Dubai engineering team with a total budget of AED 31500. Find suitable vendors, compare total costs, check procurement policy compliance, and determine the approval workflow.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "quantity": 7,
+      "location": "Dubai",
+      "budget": 31500
+    },
+    "expected_policy_result": "Department Head + Finance",
+    "expected_budget_result": 31500,
+    "expected_approval": [
+      "Department Head",
+      "Finance"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Budget Validation",
+      "Policy Validation",
+      "Approval Determination",
+      "Purchase Request Generation"
+    ]
+  },
+  {
+    "id": "complex-03",
+    "difficulty": "Complex",
+    "user_query": "I need 8 laptops for my Dubai engineering team with a total budget of AED 36000. Find suitable vendors, compare total costs, check procurement policy compliance, and determine the approval workflow.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "quantity": 8,
+      "location": "Dubai",
+      "budget": 36000
+    },
+    "expected_policy_result": "Department Head + Finance",
+    "expected_budget_result": 36000,
+    "expected_approval": [
+      "Department Head",
+      "Finance"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Budget Validation",
+      "Policy Validation",
+      "Approval Determination",
+      "Purchase Request Generation"
+    ]
+  },
+  {
+    "id": "complex-04",
+    "difficulty": "Complex",
+    "user_query": "I need 9 laptops for my Dubai engineering team with a total budget of AED 40500. Find suitable vendors, compare total costs, check procurement policy compliance, and determine the approval workflow.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "quantity": 9,
+      "location": "Dubai",
+      "budget": 40500
+    },
+    "expected_policy_result": "Department Head + Finance",
+    "expected_budget_result": 40500,
+    "expected_approval": [
+      "Department Head",
+      "Finance"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Budget Validation",
+      "Policy Validation",
+      "Approval Determination",
+      "Purchase Request Generation"
+    ]
+  },
+  {
+    "id": "complex-05",
+    "difficulty": "Complex",
+    "user_query": "I need 10 laptops for my Dubai engineering team with a total budget of AED 45000. Find suitable vendors, compare total costs, check procurement policy compliance, and determine the approval workflow.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "quantity": 10,
+      "location": "Dubai",
+      "budget": 45000
+    },
+    "expected_policy_result": "Department Head + Finance",
+    "expected_budget_result": 45000,
+    "expected_approval": [
+      "Department Head",
+      "Finance"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Budget Validation",
+      "Policy Validation",
+      "Approval Determination",
+      "Purchase Request Generation"
+    ]
+  },
+  {
+    "id": "complex-06",
+    "difficulty": "Complex",
+    "user_query": "I need 11 laptops for my Dubai engineering team with a total budget of AED 49500. Find suitable vendors, compare total costs, check procurement policy compliance, and determine the approval workflow.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "quantity": 11,
+      "location": "Dubai",
+      "budget": 49500
+    },
+    "expected_policy_result": "Department Head + Finance",
+    "expected_budget_result": 49500,
+    "expected_approval": [
+      "Department Head",
+      "Finance"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Budget Validation",
+      "Policy Validation",
+      "Approval Determination",
+      "Purchase Request Generation"
+    ]
+  },
+  {
+    "id": "complex-07",
+    "difficulty": "Complex",
+    "user_query": "I need 12 laptops for my Dubai engineering team with a total budget of AED 54000. Find suitable vendors, compare total costs, check procurement policy compliance, and determine the approval workflow.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "quantity": 12,
+      "location": "Dubai",
+      "budget": 54000
+    },
+    "expected_policy_result": "Department Head + Finance",
+    "expected_budget_result": 54000,
+    "expected_approval": [
+      "Department Head",
+      "Finance"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Budget Validation",
+      "Policy Validation",
+      "Approval Determination",
+      "Purchase Request Generation"
+    ]
+  },
+  {
+    "id": "complex-08",
+    "difficulty": "Complex",
+    "user_query": "I need 13 laptops for my Dubai engineering team with a total budget of AED 58500. Find suitable vendors, compare total costs, check procurement policy compliance, and determine the approval workflow.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "quantity": 13,
+      "location": "Dubai",
+      "budget": 58500
+    },
+    "expected_policy_result": "Department Head + Finance",
+    "expected_budget_result": 58500,
+    "expected_approval": [
+      "Department Head",
+      "Finance"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Budget Validation",
+      "Policy Validation",
+      "Approval Determination",
+      "Purchase Request Generation"
+    ]
+  },
+  {
+    "id": "complex-09",
+    "difficulty": "Complex",
+    "user_query": "I need 14 laptops for my Dubai engineering team with a total budget of AED 63000. Find suitable vendors, compare total costs, check procurement policy compliance, and determine the approval workflow.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "quantity": 14,
+      "location": "Dubai",
+      "budget": 63000
+    },
+    "expected_policy_result": "Department Head + Finance",
+    "expected_budget_result": 63000,
+    "expected_approval": [
+      "Department Head",
+      "Finance"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Budget Validation",
+      "Policy Validation",
+      "Approval Determination",
+      "Purchase Request Generation"
+    ]
+  },
+  {
+    "id": "complex-10",
+    "difficulty": "Complex",
+    "user_query": "I need 15 laptops for my Dubai engineering team with a total budget of AED 67500. Find suitable vendors, compare total costs, check procurement policy compliance, and determine the approval workflow.",
+    "expected_intent": "procurement_request",
+    "expected_requirements": {
+      "category": "laptops",
+      "quantity": 15,
+      "location": "Dubai",
+      "budget": 67500
+    },
+    "expected_policy_result": "Department Head + Finance",
+    "expected_budget_result": 67500,
+    "expected_approval": [
+      "Department Head",
+      "Finance"
+    ],
+    "expected_workflow": [
+      "Vendor Search",
+      "Budget Validation",
+      "Policy Validation",
+      "Approval Determination",
+      "Purchase Request Generation"
+    ]
+  }
+]
