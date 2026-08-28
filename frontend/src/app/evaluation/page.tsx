@@ -88,14 +88,14 @@ export default function Evaluation() {
         </div>
         <div className="bg-white p-6 rounded-3xl border border-gray-200 shadow-sm flex flex-col justify-center">
           <p className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Passed Cases</p>
-          <p className="text-4xl font-black text-emerald-600">{passed || 28} <span className="text-sm font-semibold text-gray-400">/ {total}</span></p>
+          <p className="text-4xl font-black text-emerald-600">{passed} <span className="text-sm font-semibold text-gray-400">/ {total}</span></p>
         </div>
         <div className="bg-white p-6 rounded-3xl border border-gray-200 shadow-sm flex flex-col justify-center">
           <p className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 flex items-center">
             Edge-case Failures
             <InfoButton text="Identifies complex prompts with boundary condition or ambiguity errors to guide model fine-tuning." />
           </p>
-          <p className="text-4xl font-black text-red-500">{failed || 2} <span className="text-sm font-semibold text-gray-400">/ {total}</span></p>
+          <p className="text-4xl font-black text-red-500">{failed} <span className="text-sm font-semibold text-gray-400">/ {total}</span></p>
         </div>
       </div>
 
